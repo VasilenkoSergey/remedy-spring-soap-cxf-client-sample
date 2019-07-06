@@ -50,13 +50,4 @@ public class SpringSoapCxfClientSamplePlugin extends ARFilterAPIPlugin {
     public void terminate(ARPluginContext context) {
         applicationContext.close();
     }
-
-    public static void main(String[] args) {
-        SpringSoapCxfClientSamplePlugin plugin = new SpringSoapCxfClientSamplePlugin();
-        plugin.initialize(new ARPluginContext());
-        List<Value> values = new ArrayList<>();
-        values.add(new Value(3));
-        values.add(new Value(3));
-        plugin.filterAPICall(new ARPluginContext(), values);
-    }
 }
