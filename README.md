@@ -1,0 +1,1 @@
+# Sample BMC Remedy soap client plugin using apache cxf and spring framework provided by pluginsvr
